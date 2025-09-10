@@ -8,7 +8,7 @@ public class BST {
     private int size;
 
     public boolean isAVL() {        
-
+        return isAVL(this.root);
     }
 
     private boolean isAVL(Node current) {
@@ -440,5 +440,5 @@ class Node {
 
     public boolean isLeaf() {
         return this.left == null && this.right == null;
-    }
+    }    
 }
