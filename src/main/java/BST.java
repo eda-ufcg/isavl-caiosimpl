@@ -7,9 +7,17 @@ public class BST {
     private Node root;
     private int size;
 
-    public boolean isAVL() {
-        
+    public boolean isAVL() {        
 
+    }
+
+    private boolean isAVL(Node current) {
+        if(current == null) return true;
+        
+        int balanceValue = balance(current);
+        if(Math.abs(balanceValue) > 1) return false;
+        
+        return isAVL(current.left) && isAVL(current.right);
     }
 
     /**
@@ -433,14 +441,4 @@ class Node {
     public boolean isLeaf() {
         return this.left == null && this.right == null;
     }
-
-    public boolean isBalanceado() {
-        if(Math.abs(height(this.left) - height(this.right))) <= 1;
-    }
-
-    public int height() {
-        if(this == null) return -1;
-        return 1 + Math.max(height(this.left), height(this.right));
-    }
-    
 }
