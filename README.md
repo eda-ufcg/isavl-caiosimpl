@@ -1,8 +1,8 @@
 # Identificação
 
-* Nome: 
-* Email (@ccc): 
-* Matrícula: 
+* Nome: Caio Henrique José de Brito Simplicio
+* Email (@ccc): caio.henrique.jose.de.brito.simplicio@ccc.ufcg.edu.br
+* Matrícula: 124110651
 
 # Roteiro: isAVL
 
